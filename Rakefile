@@ -21,7 +21,7 @@ ENV['LANG'] = "en_US.UTF-8" # UBUNTU 10.04, Y U NO DEFAULT TO UTF-8?
 
 require 'tasks/nokogiri.org'
 
-HOE = Hoe.spec 'nokogiri' do
+HOE = Hoe.spec 'nokogiri-mempatch' do
   developer 'Aaron Patterson', 'aaronp@rubyforge.org'
   developer 'Mike Dalessio',   'mike.dalessio@gmail.com'
   developer 'Yoko Harada',     'yokolet@gmail.com'

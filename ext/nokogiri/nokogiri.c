@@ -65,14 +65,14 @@ void nokogiri_root_nsdef(xmlNsPtr ns, xmlDocPtr doc)
 
 void Init_nokogiri()
 {
-#ifndef __MACRUBY__
-  xmlMemSetup(
-      (xmlFreeFunc)ruby_xfree,
-      (xmlMallocFunc)ruby_xmalloc,
-      (xmlReallocFunc)ruby_xrealloc,
-      ruby_strdup
-  );
-#endif
+// #ifndef __MACRUBY__
+//   xmlMemSetup(
+//       (xmlFreeFunc)ruby_xfree,
+//       (xmlMallocFunc)ruby_xmalloc,
+//       (xmlReallocFunc)ruby_xrealloc,
+//       ruby_strdup
+//   );
+// #endif
 
   mNokogiri         = rb_define_module("Nokogiri");
   mNokogiriXml      = rb_define_module_under(mNokogiri, "XML");
